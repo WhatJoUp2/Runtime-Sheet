@@ -8,4 +8,7 @@ export default defineConfig({
     // For example, "/my-project/"
     assetPrefix: '/Runtime-Sheet/',
   },
+  html: {
+    title: 'Runtime sheet',
+  },
 });
