@@ -1,0 +1,51 @@
+/* .attribute-container {
+  width: fit-content;
+} */
+
+.attribute-title {
+  font-size: 20px;
+  color: #f00;
+  text-shadow: 0 0 5px #f00;
+  margin-bottom: 5px;
+}
+
+.attribute-table {
+  /* width: fit-content; */
+  width: 100%;
+  font-size: 20px;
+  color: #f00;
+  text-shadow: 0 0 5px #f00;
+  border: 2px solid red;
+  border-collapse: collapse;
+  box-shadow: 0 0 5px #f00;
+  /* text-transform: uppercase; */
+}
+
+.attribute-table td,
+.attribute-table th {
+  padding: 5px;
+}
+
+.attribute-table th:not(:last-child) {
+  padding-right: 20px;
+}
+
+.attribute-table thead {
+  border: 2px solid red;
+  background-color: #f00;
+  color: #000;
+  text-shadow: 0 0 2px #000;
+}
+
+.attribute-table tr > td:first-child {
+  text-align: start;
+}
+
+.attribute-table tr > td:nth-child(2) {
+  text-align: end;
+}
+
+.attribute-value {
+  background-color: #f00;
+  color: #000;
+}

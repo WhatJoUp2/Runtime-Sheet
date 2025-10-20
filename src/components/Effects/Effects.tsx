@@ -1,0 +1,31 @@
+import type { FC } from 'react';
+import './Effects.css';
+
+interface EffectsProps {
+  title: string;
+  list: {
+    title: string;
+    rank?: number;
+    description: string;
+  }[];
+}
+
+export const Effects: FC<EffectsProps> = ({ list, title }) => {
+  return (
+    <div className="effects-container">
+      <div className="effects-title">{title}</div>
+      <div className="effects-list">
+        {list.map((effect) => (
+          <div className="effect-item" key={effect.title}>
+            <div className="effects-name-container">
+              <div className="effects-name">
+                {effect.title + (effect.rank ? `[${effect.rank}]` : '')}
+              </div>
+            </div>
+            <div className="effect-description">{effect.description}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};

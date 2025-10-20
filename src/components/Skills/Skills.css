@@ -1,0 +1,9 @@
+/* .skill-container {
+  width: fit-content;
+} */
+
+.skill-note {
+  width: 100%;
+  margin: 5px 0;
+  font-size: 10px;
+}

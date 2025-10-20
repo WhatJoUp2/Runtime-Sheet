@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Sixtyfour&display=swap');
+
+body {
+  margin: 0;
+  color: #fff;
+  font-family: 'Sixtyfour', monospace;
+  /* 'Pixelify Sans', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; */
+  background: #000; /*linear-gradient(to bottom, #020917, #101725);*/
+
+  --code-font:
+    'Pixelify Sans', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.content {
+  display: flex;
+  min-height: 100vh;
+  line-height: 1.1;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.content p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.content > table {
+  margin: 10px;
+}
+
+.sheet-title {
+  color: #f00;
+  text-shadow: 0 0 15px #f00;
+}
+
+.sheet-title-ascci {
+  white-space-collapse: break-spaces;
+  font-family: monospace;
+  /* text-align: start; */
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.sheet {
+  display: flex;
+  margin: 20px;
+}
+
+.sheetcol {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px;
+  flex: 1;
+}
+
+/* .sheetcol:first-child .attribute-container {
+  width: 325px;
+} */
+
+.sheetcol:first-child .attribute-container:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* .sheetcol:first-child .attribute-table {
+  width: 325px;
+} */

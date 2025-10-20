@@ -1,0 +1,116 @@
+{
+  "details": {
+    "name": "Terran Toola",
+    "alternateIdentity": "Runtime",
+    "gender": "Alien",
+    "age": "21",
+    "height": "1.4m",
+    "weight": "52kg"
+  },
+  "abilities": {
+    "strength": -1,
+    "stamina": -1,
+    "agility": 0,
+    "dexterity": 5,
+    "fighting": 0,
+    "intelect": 10,
+    "awareness": 10,
+    "presence": 5
+  },
+  "defenses": {
+    "dodge": 7,
+    "fortitude": 1,
+    "parry": 5,
+    "toughness": -1,
+    "will": 10,
+    "initiative": 0
+  },
+  "skills": {
+    "athletics": -1,
+    "deception": 7,
+    "insight": 13,
+    "intimidation": 5,
+    "investigation": 20,
+    "perception": 20,
+    "persuasion": 13,
+    "rangedCombat": 5,
+    "sleightOfHand": 6,
+    "stealth": 10,
+    "technology": 20,
+    "treatment": 11,
+    "vehicles": 10
+  },
+  "advantages": [
+    {
+      "name": "Inventor",
+      "effect": "Use Technology to create temporary devices."
+    },
+    {
+      "name": "Connected",
+      "effect": "Call in assistance or favors with a Persuasion check."
+    },
+    {
+      "name": "Well-Informed",
+      "effect": "Immediate Investigation or Persuasion check to know something."
+    },
+    {
+      "name": "Luck",
+      "effect": "Re-roll a die once per rank.",
+      "rank": 2
+    }
+  ],
+  "powers": [
+    {
+      "name": "Mind Reading AI",
+      "effect": "Mind Reading",
+      "flaws": "Needs to see target",
+      "flats": "Subtle",
+      "rank": 2,
+      "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/mind-reading-sensory/"
+    },
+    {
+      "name": "Sonic Gun",
+      "effect": "Blast",
+      "flaws": "Easily Removable",
+      "rank": 8,
+      "link": "https://www.d20herosrd.com/6-powers/sample-powers/blast/"
+    },
+    {
+      "name": "Info Network",
+      "effect": "Senses",
+      "description": "Infrared[1], Tracking[1], Penetrates Concealment[4], Analytical (Vision)[1], Extended Senses (Vision[1], Hearing[1]), Danger Sense[1]",
+      "rank": 10,
+      "flaws": "Removable",
+      "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/senses-sensory/"
+    },
+    {
+      "name": "Spyderbots",
+      "effect": "Summon",
+      "description": "Creates small spiderbots that can be used for fighting and surveying",
+      "rank": 3,
+      "extras": "Horde, Multiple Minions (x1), Controlled",
+      "flats": "Mental Link",
+      "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/summon-control/"
+    },
+    {
+      "name": "Precognition",
+      "effect": "Senses",
+      "rank": 4,
+      "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/senses-sensory/"
+    },
+    {
+      "name": "Postcognition",
+      "effect": "Senses",
+      "rank": 4,
+      "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/senses-sensory/"
+    },
+    {
+      "name": "Rocketboots",
+      "effect": "Flight",
+      "flats": "Aquatic",
+      "rank": 2,
+      "flaws": "Removable",
+      "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/flight-movement/"
+    }
+  ]
+}

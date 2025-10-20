@@ -1,0 +1,38 @@
+.effects-list {
+  /* width: 420px; */
+  text-align: start;
+  color: #f00;
+  text-shadow: 0 0 5px #f00;
+  border: 2px solid #f00;
+  padding: 5px;
+}
+
+.effects-name {
+  color: black;
+  text-shadow: 0 0 2px #000;
+  background: #f00;
+  padding: 5px;
+  font-size: 20px;
+  width: fit-content;
+}
+
+.effects-name-container {
+  border-bottom: 2px solid #f00;
+  margin-bottom: 10px;
+}
+
+.effect-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.effects-title {
+  font-size: 20px;
+  color: #f00;
+  text-shadow: 0 0 5px #f00;
+  margin-bottom: 5px;
+}
+
+.effect-description {
+  white-space: break-spaces;
+  line-height: 1.5;
+}
