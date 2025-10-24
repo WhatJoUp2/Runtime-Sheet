@@ -1,23 +1,22 @@
 .effects-list {
-  /* width: 420px; */
   text-align: start;
-  color: #f00;
-  text-shadow: 0 0 5px #f00;
-  border: 2px solid #f00;
+  color: var(--accent-color);
+  text-shadow: 0 0 5px var(--accent-color);
+  border: 2px solid var(--accent-color);
   padding: 5px;
 }
 
-.effects-name {
+.effects-name, .effects-name a {
   color: black;
-  text-shadow: 0 0 2px #000;
-  background: #f00;
+  text-shadow: 0 0 2px var(--background-color);
+  background: var(--accent-color);
   padding: 5px;
   font-size: 20px;
   width: fit-content;
 }
 
 .effects-name-container {
-  border-bottom: 2px solid #f00;
+  border-bottom: 2px solid var(--accent-color);
   margin-bottom: 10px;
 }
 
@@ -27,12 +26,12 @@
 
 .effects-title {
   font-size: 20px;
-  color: #f00;
-  text-shadow: 0 0 5px #f00;
+  color: var(--accent-color);
+  text-shadow: 0 0 5px var(--accent-color);
   margin-bottom: 5px;
 }
 
 .effect-description {
-  white-space: break-spaces;
+  white-space-collapse: break-spaces;
   line-height: 1.5;
 }

@@ -2,20 +2,21 @@
   width: fit-content;
   text-align: start;
   margin-bottom: 15px;
+  margin-top: 27px;
 }
 
 .detes-table th {
-  background: #f00;
+  background: var(--accent-color);
   text-align: start;
-  color: #000;
-  text-shadow: 0 0 2px #000;
+  color: var(--background-color);
+  text-shadow: 0 0 2px var(--background-color);
   padding: 5px;
   margin: 5px;
-  border-bottom: 3px solid #000;
+  border-bottom: 3px solid var(--background-color);
 }
 
 .detes-table td {
-  color: #f00;
-  text-shadow: 0 0 2px #f00;
+  color: var(--accent-color);
+  text-shadow: 0 0 2px var(--accent-color);
   padding-left: 10px;
 }

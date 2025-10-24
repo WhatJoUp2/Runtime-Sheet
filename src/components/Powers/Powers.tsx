@@ -16,11 +16,11 @@ interface Power {
 export const Powers: FC = () => {
   const getDescription = (power: Power): string => {
     let ret = '';
-    ret += 'Type: ' + power.effect;
-    ret += power.extras ? '\nExtas: ' + power.extras : '';
-    ret += power.flaws ? '\nFlaws: ' + power.flaws : '';
-    ret += power.flats ? '\nFlats: ' + power.flats : '';
-    ret += power.description ? '\nDescription: ' + power.description : '';
+    ret += 'TYPE: ' + power.effect;
+    ret += power.extras ? '\nEXTRAS: ' + power.extras : '';
+    ret += power.flaws ? '\nFLAWS: ' + power.flaws : '';
+    ret += power.flats ? '\nFLATS: ' + power.flats : '';
+    ret += power.description ? '\nDESCRIPTION: ' + power.description : '';
 
     return ret;
   };
@@ -29,6 +29,7 @@ export const Powers: FC = () => {
     title: power.name,
     rank: power.rank,
     description: getDescription(power),
+    link: power.link,
   }));
 
   return <Effects title="Powers" list={powersList} />;

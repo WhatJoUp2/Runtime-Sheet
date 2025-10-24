@@ -7,6 +7,7 @@ interface EffectsProps {
     title: string;
     rank?: number;
     description: string;
+    link?: string;
   }[];
 }
 
@@ -19,7 +20,13 @@ export const Effects: FC<EffectsProps> = ({ list, title }) => {
           <div className="effect-item" key={effect.title}>
             <div className="effects-name-container">
               <div className="effects-name">
-                {effect.title + (effect.rank ? `[${effect.rank}]` : '')}
+                {effect.link ? (
+                  <a href={effect.link} target='_blank'>
+                    {effect.title + (effect.rank ? `[${effect.rank}]` : '')}
+                  </a>
+                ) : (
+                  effect.title + (effect.rank ? `[${effect.rank}]` : '')
+                )}
               </div>
             </div>
             <div className="effect-description">{effect.description}</div>
