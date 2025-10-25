@@ -16,12 +16,15 @@ export const Effects: FC<EffectsProps> = ({ list, title }) => {
     <div className="effects-container">
       <div className="effects-title">{title}</div>
       <div className="effects-list">
+        {list.length === 0 && (
+          <div className="effect-none"> X == No {title} == X</div>
+        )}
         {list.map((effect) => (
           <div className="effect-item" key={effect.title}>
             <div className="effects-name-container">
               <div className="effects-name">
                 {effect.link ? (
-                  <a href={effect.link} target='_blank'>
+                  <a href={effect.link} target="_blank">
                     {effect.title + (effect.rank ? `[${effect.rank}]` : '')}
                   </a>
                 ) : (

@@ -1,0 +1,73 @@
+{
+    "details": {
+        "name": "Spyderbot",
+        "alternateIdentity": "N/A",
+        "gender": "Robot",
+        "age": "N/A",
+        "height": "1.3m",
+        "weight": "30kg"
+    },
+    "abilities": {
+        "strength": 3,
+        "stamina": 3,
+        "agility": 2,
+        "dexterity": 0,
+        "fighting": 2,
+        "intelect": -5,
+        "awareness": 5,
+        "presence": -5
+    },
+    "defenses": {
+        "dodge": 5,
+        "fortitude": 5,
+        "parry": 4,
+        "toughness": 3,
+        "will": 5,
+        "initiative": 2
+    },
+    "skills": {
+        "athletics": 3,
+        "closeCombat": 2,
+        "deception": -5,
+        "insight": 5,
+        "intimidation": -5,
+        "perception": 10,
+        "persuasion": -5,
+        "sleightOfHand": 10,
+        "stealth": 17
+    },
+    "advantages": [],
+    "powers": [
+        {
+            "name": "Wall Crawling",
+            "effect": "Movement",
+            "rank": 1,
+            "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/movement-movement"
+        },
+        {
+            "name": "Cloaking",
+            "effect": "Concealment (Visual)",
+            "rank": 2,
+            "flaws": "Blending",
+            "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/concealment-sensory/"
+        },
+        {
+            "name": "Night Vision",
+            "effect": "Senses (Darkvision)",
+            "rank": 2,
+            "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/senses-sensory/"
+        },
+        {
+            "name": "Carbon Fiber Body",
+            "effect": "Protection",
+            "rank": 4,
+            "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/protection-defense/"
+        },
+        {
+            "name": "Sharp Claws",
+            "effect": "Damage",
+            "rank": 4,
+            "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/damage-attack/"
+        }
+    ]
+}

@@ -35,3 +35,8 @@
   white-space-collapse: break-spaces;
   line-height: 1.5;
 }
+
+.effect-none {
+  text-align: center;
+  margin: 10px 0;
+}

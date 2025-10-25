@@ -9,6 +9,6 @@ export default defineConfig({
     assetPrefix: '/Runtime-Sheet/',
   },
   html: {
-    title: 'Runtime sheet',
+    title: 'League of Stars',
   },
 });

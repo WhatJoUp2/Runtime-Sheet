@@ -1,0 +1,59 @@
+.settings-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  /* color: transparent;
+  background: repeating-linear-gradient(
+    0deg,
+    var(--accent-color),
+    var(--accent-color) 3px,
+    var(--background-color) 9px
+  );
+  background-clip: text; */
+  color: var(--accent-color);
+  text-shadow: 0 0 4px var(--accent-color);
+  font-size: 50px;
+}
+
+.text-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: var(--accent-color);
+  text-shadow: 0 0 4px var(--accent-color);
+  font-family: Sixtyfour;
+}
+
+.character-list {
+  /* list-style: none; */
+  color: var(--accent-color);
+  text-shadow: 0 0 3px var(--accent-color);
+  margin: 20px;
+}
+
+.character-list li {
+  margin-bottom: 10px;
+  width: fit-content;
+}
+
+.character-list li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.character-list li.active {
+  text-decoration: underline;
+}
+
+.character-list li::marker {
+  content: "> ";
+
+}

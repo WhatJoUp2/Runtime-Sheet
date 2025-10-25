@@ -12,35 +12,10 @@ export const Attributes: FC<AttributesProps> = ({
   title,
   sign = false,
 }) => {
-  // const getTitle = (index: number) => {
-  //   const max = Math.max(...attrs.map((attr) => attr.title.length));
-  //   const diff = max - attrs[index].title.length;
-
-  //   return attrs[index].title + ' '.repeat(diff);
-  // };
-
   const getValue = (value: number) => {
     if (!sign) return value.toString();
     return value < 0 ? value.toString() : '+' + value;
   };
-
-  // const getValue = (index: number) => {
-  //   return attrs[index].value.toString().length == 2
-  //     ? attrs[index].value.toString()
-  //     : ' ' + attrs[index].value.toString();
-  // };
-
-  // const getEval = (value: number) => {
-  //   if (value < 0) {
-  //     return 'Weak';
-  //   }
-  //   if (value < 6) {
-  //     return 'Exceptional';
-  //   }
-  //   if (value < 11) {
-  //     return 'Superhuman';
-  //   }
-  // };
 
   return (
     <div className="attribute-container">
