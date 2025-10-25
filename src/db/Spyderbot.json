@@ -33,8 +33,8 @@
     "intimidation": -5,
     "perception": 8,
     "persuasion": -5,
-    "sleightOfHand": 10,
-    "stealth": 10
+    "sleightOfHand": 8,
+    "stealth": 8
   },
   "advantages": [],
   "powers": [
@@ -46,15 +46,16 @@
     },
     {
       "name": "Cloaking",
-      "effect": "Concealment (Visual)",
+      "effect": "Concealment",
       "rank": 2,
       "flaws": "Blending",
-      "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/concealment-sensory/"
+      "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/concealment-sensory/",
+      "description": "Visual and Hearing"
     },
     {
       "name": "Night Vision",
       "effect": "Senses (Darkvision)",
-      "rank": 2,
+      "rank": 3,
       "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/senses-sensory/"
     },
     {
@@ -72,8 +73,16 @@
     {
       "name": "Sports Engine",
       "effect": "Speed",
+      "rank": 8,
+      "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/speed-movement",
+      "description": "Drives at 500mph"
+    },
+    {
+      "name": "Jet Engine",
+      "effect": "Flight",
       "rank": 4,
-      "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/speed-movement"
+      "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/flight-movement/",
+      "description": "Flies at 60mph"
     }
   ]
 }

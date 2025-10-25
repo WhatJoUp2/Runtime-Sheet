@@ -1,9 +1,7 @@
 import { useContext, type FC } from 'react';
-import {
-  CharacterContext,
-  CharacterIndex,
-} from '../../../contexts/characterContext/CharacterContext';
+import { CharacterContext } from '../../../contexts/characterContext/CharacterContext';
 import { ModalContext } from '../../../contexts/modalContext/ModalContext';
+import { CharacterIndex } from '../../../db/CharacterType';
 
 export const SettingsModal: FC = () => {
   const { selectedCharacterIndex, setSelectedCharacter } =
@@ -13,7 +11,7 @@ export const SettingsModal: FC = () => {
   const handleCharacterSelect = (index: CharacterIndex) => {
     setSelectedCharacter(index);
     closeModal();
-  }
+  };
 
   return (
     <div>
@@ -38,6 +36,14 @@ export const SettingsModal: FC = () => {
             Spyderbot
           </li>
         </ul>
+        <li
+          onClick={() => handleCharacterSelect(CharacterIndex.Nightshade)}
+          className={
+            selectedCharacterIndex === CharacterIndex.Nightshade ? 'active' : ''
+          }
+        >
+          Nightshade
+        </li>
       </ul>
     </div>
   );

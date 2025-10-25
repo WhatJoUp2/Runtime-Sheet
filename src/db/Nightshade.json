@@ -1,0 +1,113 @@
+{
+  "details": {
+    "name": "Sophie Manson",
+    "alternateIdentity": "Nightshade",
+    "gender": "Female",
+    "age": "20",
+    "height": "5'4\"",
+    "weight": "102lbs"
+  },
+  "abilities": {
+    "strength": -1,
+    "stamina": 2,
+    "agility": 10,
+    "dexterity": 12,
+    "fighting": -1,
+    "intelect": 2,
+    "awareness": 8,
+    "presence": 6
+  },
+  "defenses": {
+    "dodge": 18,
+    "fortitude": 4,
+    "parry": -1,
+    "toughness": 2,
+    "will": 16,
+    "initiative": 10
+  },
+  "skills": {
+    "Acrobatics": 15,
+    "closeCombat": -1,
+    "deception": 20,
+    "magicalExpertise": 10,
+    "unnaturalExpertise": 14,
+    "insight": 14,
+    "intimidation": 11,
+    "investigation": 4,
+    "perception": 14,
+    "persuasion": 6,
+    "rangedCombat": 12,
+    "stealth": 18
+  },
+  "advantages": [
+    {
+      "name": "Uncanny Dodge",
+      "effect": "Not vulnerable when surprised or caught off-guard."
+    },
+    {
+      "name": "Fearless",
+      "effect": "Immune to fear effects."
+    },
+    {
+      "name": "Ritualist",
+      "effect": "Use Expertise (Magic) to create and perform rituals."
+    },
+    {
+      "name": "Power Attack",
+      "effect": "Trade attack bonus for effect bonus."
+    }
+  ],
+  "powers": [
+    {
+      "name": "Chokehold",
+      "effect": "Ranged Affliction",
+      "rank": 8,
+      "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/affliction-attack/",
+      "description": "Fort Resist, 1 Degree: Immobile, 2 Degrees: Immobile, Vulnerable, Impaired, 3 Degrees: Paralyzed"
+    },
+    {
+      "name": "Eldritch Splinter",
+      "effect": "Damage",
+      "rank": 8,
+      "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/damage-attack"
+    },
+    {
+      "name": "Distortion Aura",
+      "effect": "Ranged Affliction",
+      "rank": 4,
+      "extras": "Aura"
+    },
+    {
+      "name": "Planeshift",
+      "effect": "Movement",
+      "rank": 1,
+      "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/movement-movement/",
+      "description": "Dimension Travel (Mansus)"
+    },
+    {
+      "name": "Eldritch Echolocation",
+      "effect": "Senses",
+      "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/senses-sensory/",
+      "rank": 5,
+      "description": "Auditory, Accurate, Counters Illusions, Ultrahearing",
+      "extras": "Dimensional",
+      "flats": "Noticeable"
+    },
+    {
+      "name": "Nightshift",
+      "effect": "Teleport",
+      "rank": 3,
+      "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/teleport-movement/",
+      "description": "250ft.",
+      "flaws": "Medium (Shadow)"
+    },
+    {
+      "name": "Dimensional Projection",
+      "effect": "Enviornment",
+      "rank": 4,
+      "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/environment-control/",
+      "description": "Impede Movement",
+      "flaws": "Uncontrollable"
+    }
+  ]
+}

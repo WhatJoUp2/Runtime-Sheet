@@ -5,9 +5,14 @@ import {
   type FC,
   type PropsWithChildren,
 } from 'react';
-import type { Character } from '../../db/CharacterType';
-import { Runtime, Spyderbot } from '../../db/';
-import { getCharacterFromUrl, setCharacterInUrl, setPageTitle } from '../../utils/generalUtils';
+import { type Character, CharacterIndex } from '../../db/CharacterType';
+import { Nightshade, Runtime, Spyderbot } from '../../db/';
+import {
+  getCharacterFromUrl,
+  setCharacterInUrl,
+  setPageTitle,
+} from '../../utils/generalUtils';
+import { setCharacterTheme } from '../../utils/themeUtils';
 
 interface CharacterContextType {
   characters: Character[];
@@ -16,12 +21,7 @@ interface CharacterContextType {
   setSelectedCharacter: (index: CharacterIndex) => void;
 }
 
-const characters = [Runtime, Spyderbot];
-
-export enum CharacterIndex {
-  Runtime,
-  Spyderbot,
-}
+const characters = [Runtime, Spyderbot, Nightshade];
 
 export const CharacterContext = createContext<CharacterContextType>({
   characters,
@@ -39,6 +39,7 @@ export const CharacterProvider: FC<PropsWithChildren> = ({ children }) => {
   useEffect(() => {
     setCharacterInUrl(selectedCharacterIndex);
     setPageTitle(selectedCharacterIndex);
+    setCharacterTheme(selectedCharacterIndex);
   }, [selectedCharacterIndex]);
 
   return (
