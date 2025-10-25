@@ -1,12 +1,13 @@
 import {
   createContext,
+  useEffect,
   useState,
   type FC,
   type PropsWithChildren,
 } from 'react';
 import type { Character } from '../../db/CharacterType';
 import { Runtime, Spyderbot } from '../../db/';
-import { getCharacterFromUrl, setCharacterInUrl } from '../../utils/generalUtils';
+import { getCharacterFromUrl, setCharacterInUrl, setPageTitle } from '../../utils/generalUtils';
 
 interface CharacterContextType {
   characters: Character[];
@@ -30,15 +31,15 @@ export const CharacterContext = createContext<CharacterContextType>({
 });
 
 export const CharacterProvider: FC<PropsWithChildren> = ({ children }) => {
-  const [selectedCharacterIndex, setSelectedCharacterIndex] = useState(
+  const [selectedCharacterIndex, setSelectedCharacter] = useState(
     getCharacterFromUrl() || CharacterIndex.Runtime,
   );
   const selectedCharacter = characters[selectedCharacterIndex];
 
-  const setSelectedCharacter = (index: CharacterIndex) => {
-    setSelectedCharacterIndex(index);
-    setCharacterInUrl(index);
-  };
+  useEffect(() => {
+    setCharacterInUrl(selectedCharacterIndex);
+    setPageTitle(selectedCharacterIndex);
+  }, [selectedCharacterIndex]);
 
   return (
     <CharacterContext.Provider
