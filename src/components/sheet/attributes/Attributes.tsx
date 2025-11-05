@@ -31,7 +31,23 @@ export const Attributes: FC<AttributesProps> = ({
           {list.map((attr) => (
             <tr key={attr.title}>
               <td>{attr.title}</td>
-              <td>{getValue(attr.value)}</td>
+              <td
+                className={sign ? 'attribute-tooltip' : ''}
+                onClick={() => {
+                  if (sign) {
+                    navigator.clipboard.writeText(
+                      `/roll 1d20 ` + getValue(attr.value),
+                    );
+                  }
+                }}
+              >
+                {getValue(attr.value)}
+                {sign && (
+                  <label className="attribute-tooltip-text">
+                    Command copied!
+                  </label>
+                )}
+              </td>
             </tr>
           ))}
         </tbody>

@@ -49,3 +49,25 @@
   background-color: var(--accent-color);
   color: var(--background-color);
 }
+
+.attribute-tooltip {
+  cursor: pointer;
+  position: relative;
+}
+
+.attribute-tooltip-text {
+  opacity: 0;
+  transition: all 0.8s;
+  position: absolute;
+  background: var(--background-color);
+  width: fit-content;
+  padding: 5px;
+  border: 2px solid var(--accent-color);
+  transition: opacity 2s;
+}
+
+.attribute-tooltip:active .attribute-tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0s;
+}
