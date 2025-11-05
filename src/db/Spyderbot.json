@@ -14,7 +14,7 @@
     "dexterity": 0,
     "fighting": 2,
     "intelect": -5,
-    "awareness": 5,
+    "awareness": 3,
     "presence": -5
   },
   "defenses": {
@@ -27,14 +27,14 @@
   },
   "skills": {
     "athletics": 3,
-    "closeCombat": 2,
+    "clawsCloseCombat": 2,
     "deception": -5,
     "insight": 3,
     "intimidation": -5,
     "perception": 8,
     "persuasion": -5,
     "sleightOfHand": 8,
-    "stealth": 8
+    "stealth": 9
   },
   "advantages": [],
   "powers": [
@@ -61,8 +61,16 @@
     {
       "name": "Sharp Claws",
       "effect": "Damage",
-      "rank": 4,
+      "rank": 1,
       "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/damage-attack/"
+    },
+    {
+      "name": "Force Field",
+      "rank": 6,
+      "effect": "Protection",
+      "description": "Only Affects Others, Limited",
+      "flaws": "Sustained",
+      "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/protection-defense/"
     },
     {
       "name": "Bike Mode",
