@@ -18,12 +18,8 @@ export const Attributes: FC<AttributesProps> = ({
   };
 
   const getCommand = (value: number, title: string) => {
-    if (sign) {
-      // navigator.clipboard.writeText(`/roll dice:1d20 ` + getValue(value));
-      navigator.clipboard.writeText(
-        `!roll 1d20 ` + getValue(value) + ' ' + title,
-      );
-    }
+    // navigator.clipboard.writeText(`/roll dice:1d20 ` + getValue(value));
+    navigator.clipboard.writeText(`!roll 1d20 ${getValue(value)} ${title}`);
   };
 
   return (
@@ -41,15 +37,13 @@ export const Attributes: FC<AttributesProps> = ({
             <tr key={attr.title}>
               <td>{attr.title}</td>
               <td
-                className={sign ? 'attribute-tooltip' : ''}
+                className="attribute-tooltip"
                 onClick={() => getCommand(attr.value, attr.title)}
               >
                 {getValue(attr.value)}
-                {sign && (
-                  <label className="attribute-tooltip-text">
-                    Command copied!
-                  </label>
-                )}
+                <label className="attribute-tooltip-text">
+                  Command copied!
+                </label>
               </td>
             </tr>
           ))}
