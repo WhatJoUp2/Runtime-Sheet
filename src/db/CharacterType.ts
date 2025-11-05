@@ -47,16 +47,19 @@ export enum CharacterIndex {
   Runtime,
   Spyderbot,
   Nightshade,
+  Astrid,
 }
 
 export const indexToCharacterName = {
   [CharacterIndex.Runtime]: 'Runtime',
   [CharacterIndex.Spyderbot]: 'Spyderbot',
   [CharacterIndex.Nightshade]: 'Nightshade',
+  [CharacterIndex.Astrid]: 'Astrid',
 };
 
 export const indexToColor = {
   [CharacterIndex.Runtime]: '#f00',
   [CharacterIndex.Spyderbot]: '#f00',
   [CharacterIndex.Nightshade]: '#80f',
+  [CharacterIndex.Astrid]: '#ff0',
 };

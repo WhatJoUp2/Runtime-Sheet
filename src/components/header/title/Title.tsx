@@ -58,6 +58,20 @@ export const Title: FC = () => {
             <div>Fear the Dark</div>
           </>
         );
+      case CharacterIndex.Astrid:
+        return (
+          <>
+            <pre className="sheet-title-ascci">
+              {'     _        _        _     _ \n'}
+              {'    / \\   ___| |_ _ __(_) __| |\n'}
+              {"   / _ \\ / __| __| '__| |/ _` |\n"}
+              {'  / ___ \\\\__ \\ |_| |  | | (_| |\n'}
+              {' /_/   \\_\\___/\\__|_|  |_|\\__,_|\n'}
+            </pre>
+            <div>For the Glory of Asgard!</div>
+          </>
+        );
+
       default:
         return 'Unknown';
     }

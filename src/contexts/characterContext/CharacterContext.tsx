@@ -6,7 +6,7 @@ import {
   type PropsWithChildren,
 } from 'react';
 import { type Character, CharacterIndex } from '../../db/CharacterType';
-import { Nightshade, Runtime, Spyderbot } from '../../db/';
+import { Astrid, Nightshade, Runtime, Spyderbot } from '../../db/';
 import {
   getCharacterFromUrl,
   setCharacterInUrl,
@@ -21,7 +21,7 @@ interface CharacterContextType {
   setSelectedCharacter: (index: CharacterIndex) => void;
 }
 
-const characters = [Runtime, Spyderbot, Nightshade];
+const characters = [Runtime, Spyderbot, Nightshade, Astrid];
 
 export const CharacterContext = createContext<CharacterContextType>({
   characters,

@@ -19,6 +19,8 @@ export function getCharacterFromUrl(): CharacterIndex | null {
       return CharacterIndex.Spyderbot;
     case indexToCharacterName[CharacterIndex.Nightshade]:
       return CharacterIndex.Nightshade;
+    case indexToCharacterName[CharacterIndex.Astrid]:
+      return CharacterIndex.Astrid;
     default:
       return null;
   }

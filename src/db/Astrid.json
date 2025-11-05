@@ -1,0 +1,81 @@
+{
+  "details": {
+    "name": "Astrid",
+    "alternateIdentity": "N/A",
+    "gender": "Female",
+    "age": "Unkown",
+    "height": "Tall",
+    "weight": "Beefy"
+  },
+  "abilities": {
+    "strength": 6,
+    "stamina": 8,
+    "agility": 6,
+    "dexterity": 8,
+    "fighting": 8,
+    "intelect": 2,
+    "awareness": 4,
+    "presence": 2
+  },
+  "defenses": {
+    "dodge": 12,
+    "fortitude": 8,
+    "parry": 11,
+    "toughness": 8,
+    "will": 8,
+    "initiative": 6
+  },
+  "skills": {
+    "acrobatics": 8,
+    "Athletics": 8,
+    "axeCloseCombat": 12,
+    "unarmedCloseCombat": 8,
+    "deception": 2,
+    "insight": 4,
+    "intimidation": 6,
+    "perception": 8,
+    "persuasion": 2,
+    "lightningRangedCombat": 12,
+    "stealth": 6
+  },
+  "advantages": [
+    {
+      "name": "Power Attack",
+      "effect": "Trade attack bonus for effect bonus."
+    },
+    {
+      "name": "Fearless",
+      "effect": "Fearless"
+    }
+  ],
+  "powers": [
+    {
+      "name": "Axe",
+      "effect": "Damage",
+      "description": "Electric / Slashing",
+      "rank": 2,
+      "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/damage-attack/"
+    },
+    {
+      "name": "Lightning Bolt",
+      "effect": "Blast",
+      "description": "Electric",
+      "rank": 8,
+      "link": "https://www.d20herosrd.com/6-powers/sample-powers/blast/"
+    },
+    {
+      "name": "Thunder Wings",
+      "effect": "Flight",
+      "flaws": "Wings",
+      "rank": 8,
+      "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/flight-movement/"
+    },
+    {
+      "name": "Ressurection",
+      "effect": "Immortality",
+      "description": "Come back to life after 1 week.",
+      "rank": 2,
+      "link": "https://www.d20herosrd.com/6-powers/effects/effect-descriptions/immortality-defense/"
+    }
+  ]
+}

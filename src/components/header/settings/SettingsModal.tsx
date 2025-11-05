@@ -44,6 +44,14 @@ export const SettingsModal: FC = () => {
         >
           Nightshade
         </li>
+        <li
+          onClick={() => handleCharacterSelect(CharacterIndex.Astrid)}
+          className={
+            selectedCharacterIndex === CharacterIndex.Astrid ? 'active' : ''
+          }
+        >
+          Astrid
+        </li>
       </ul>
     </div>
   );
