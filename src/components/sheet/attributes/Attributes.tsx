@@ -12,14 +12,16 @@ export const Attributes: FC<AttributesProps> = ({
   title,
   sign = false,
 }) => {
-  const getValue = (value: number) => {
-    if (!sign) return value.toString();
+  const getValue = (value: number, command: boolean = false) => {
+    if (!sign && !command) return value.toString();
     return value < 0 ? value.toString() : '+' + value;
   };
 
   const getCommand = (value: number, title: string) => {
     // navigator.clipboard.writeText(`/roll dice:1d20 ` + getValue(value));
-    navigator.clipboard.writeText(`!roll 1d20 ${getValue(value)} ${title}`);
+    navigator.clipboard.writeText(
+      `!roll 1d20 ${getValue(value, true)} ${title}`,
+    );
   };
 
   return (
